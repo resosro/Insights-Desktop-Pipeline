@@ -10,21 +10,21 @@ pipeline{
     stages{
         stage("Build"){
             steps{
-                powershell ".build.ps1"
+                sh ".build.ps1"
 
             }
         }
         stage("Test"){
             steps{
                 git branch: 'main', credentialsId: 'd28f4340-67ba-48ac-a47d-810f37cf684c', url: 'https://devtopia.esri.com/Release/Insights-DesktopAutomation'
-                powershell ".test.ps1"
+                sh ".test.ps1"
             }
 
         }
 
         stage("Clean"){
             steps{
-                powershell ".clean.ps1"
+                sh ".clean.ps1"
 
             }
         }
