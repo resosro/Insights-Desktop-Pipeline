@@ -21,4 +21,8 @@ function Remove-Installers{
     }
 }
 
-Remove-AppData
+function Run {
+    Remove-AppData
+    Remove-Installers
+    Write-Output "Clean Up Completed"
+}

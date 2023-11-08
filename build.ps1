@@ -32,6 +32,7 @@ function Install-Insights{
 }
 
 function Run{
+    Write-Output "build.ps1 running"
     Create-Installers-Folder
     Check-Linux-Windows-Release
     Transfer-Files-To-Agent
