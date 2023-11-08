@@ -1,0 +1,1 @@
+C:\Python372\python.exe InsightsMain.py -v $ENV:PORTAL_VERSION -d $ENV:PORTAL_URL -s $ENV:SECURITY -u $ENV:USERNAME -p $ENV:PASSWORD
